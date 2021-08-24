@@ -1,5 +1,8 @@
 all: hello
 	
+test: 
+	./hello > test.out
+	
 greetings.o: greetings.h greetings.cpp
 	g++ -c greetings.cpp 
 	
